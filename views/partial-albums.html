@@ -1,0 +1,20 @@
+
+
+ <div class='row'>
+<div class='column'>
+    <h2>TRACK</h2>
+    <ul>
+        ${data.map(song => `
+            <li> ${song.song_title}</li>
+            `).join('')}    
+    </ul>
+</div>
+<div class='column'>
+    <h2>ALBUM</h2>
+<ul>
+    ${data.map(song => `
+        <li> ${song.album_title}</li>
+        `).join('')}
+</ul>
+</div>
+</div>

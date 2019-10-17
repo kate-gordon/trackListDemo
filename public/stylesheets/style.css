@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(58,19,105,1));
+  color:#080000; 
+  
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar.is-dark {
+  background-color:#36363624;
+  display:flex; 
+  flex-direction:column;  
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center; 
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
