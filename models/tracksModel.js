@@ -8,7 +8,7 @@ class trackList {
 
     static async getAll() {
         try {
-            const response = await db.any(`SELECT s.*, a.* FROM song AS s INNER JOIN album AS a ON s.album_id = a.id;`); 
+            const response = await db.any(`SELECT s.*, a.*, artist.* FROM song AS s INNER JOIN album AS a ON s.album_id = a.id INNER JOIN artist ON a.artist_id = artist.id`); 
             console.log('response', response); 
             return response; 
         } catch(error) {
