@@ -1,5 +1,8 @@
 # TrackList Demo 
 
-Using databases I wrote (Cyndi Lauper & Janelle Monae albums with tracks(of course)) to practice express and node.js. 
+Using databases I wrote using PostgreSQL & Postico with Node.js & Express. 
+
+Databases are albums of the artists Janelle Monae & Cyndi Lauper
 
 DigitalCrafts Week 8 Exercise 
+
