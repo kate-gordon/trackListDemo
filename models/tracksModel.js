@@ -1,6 +1,6 @@
 const db = require('./conn'); 
 
-class Track {
+class trackList {
     constructor(title) {
         this.title = title;  
     }
@@ -15,16 +15,6 @@ class Track {
             return error.message; 
         }
     }
-
-    async addTrack() {
-        try {
-            const response = await db.result(`INSERT INTO song (song_title) VALUES ($1);`, [this.name] ); 
-            console.log("response", response); 
-            return response; 
-        } catch (error) {
-            return error.message; 
-        }
-    }
 }
 
-module.exports = Track; 
+module.exports = trackList; 
